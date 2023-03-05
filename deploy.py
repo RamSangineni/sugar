@@ -73,10 +73,3 @@ def main():
 if __name__=='__main__':
    main()
 
-
-uploaded_file = st.file_uploader(
-    "Choose your database", accept_multiple_files=False)
-if uploaded_file is not None:
-    file_name = uploaded_file
-else:
-    file_name = "C:\Users\ramsa\Downloads\diabeties\trained_model.sav"
