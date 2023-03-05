@@ -4,7 +4,7 @@ import streamlit as st
 import sklearn 
 
 #loading the model
-loaded_model = pickle.load(open('https://github.com/RamSangineni/sugar/blob/main/trained_model.sav','rb' ))
+loaded_model = pickle.load(open('C:\Users\ramsa\Downloads\diabeties\trained_model.sav','rb' ))
 
 #creating a function for web app
 
