@@ -37,6 +37,12 @@ def main():
    dpf=st.sidebar.number_input('Enter Diabetes Pedigree Function')
    age=st.sidebar.number_input('Enter Age')
    input_data=([pregnancies,glucose,bp,insulin,bmi,dpf,age])
+    
+    
+    import joblib
+def predict(input_data):
+    clf = joblib.load("trained_model.sav")
+    return clf.predict(input_data)
    
 
    #code for prediction
